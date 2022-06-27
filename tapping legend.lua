@@ -441,8 +441,7 @@ function SpawnAr()
 			local args = {
 				[1] =  1
 			}
-			
-			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))gs))
+			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))
 		end
 	end)
 end
@@ -457,7 +456,7 @@ function Forest()
 				[1] =  2
 			}
 			
-			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))gs))
+			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))
 		end
 	end)
 end
@@ -471,7 +470,7 @@ function Desert()
 				[1] =  3
 			}
 			
-			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))gs))
+			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))
 		end
 	end)
 end
@@ -485,7 +484,7 @@ function Winter()
 				[1] =  4
 			}
 			
-			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))gs))
+			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))
 		end
 	end)
 end
@@ -499,7 +498,7 @@ function Lava()
 				[1] =  5
 			}
 			
-			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))gs))
+			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))
 		end
 	end)
 end
@@ -513,7 +512,7 @@ function Aqua()
 				[1] =  6
 			}
 			
-			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))gs))
+			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))
 		end
 	end)
 end
@@ -527,7 +526,7 @@ function Sakura()
 				[1] =  7
 			}
 			
-			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))gs))
+			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))
 		end
 	end)
 end
@@ -541,7 +540,7 @@ function Mines()
 				[1] =  8
 			}
 			
-			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))gs))
+			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))
 		end
 	end)
 end
@@ -555,7 +554,7 @@ function Galaxy()
 				[1] =  9
 			}
 			
-			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))gs))
+			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))
 		end
 	end)
 end
@@ -569,7 +568,7 @@ function Heaven()
 				[1] =  10
 			}
 			
-			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))gs))
+			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))
 		end
 	end)
 end
@@ -583,7 +582,7 @@ function Hell()
 				[1] =  11
 			}
 			
-			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))gs))
+			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))
 		end
 	end)
 end
@@ -597,7 +596,7 @@ function Tech()
 				[1] =  12
 			}
 			
-			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))gs))
+			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))
 		end
 	end)
 end
@@ -611,7 +610,7 @@ function Steampunk()
 				[1] =  13
 			}
 			
-			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))gs))
+			game:GetService("ReplicatedStorage").Remotes.TeleportToArea:FireServer(unpack(args))
 		end
 	end)
 end
