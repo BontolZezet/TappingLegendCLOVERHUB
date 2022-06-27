@@ -56,6 +56,14 @@ a:NewToggle("Auto Tap", "auto clicker", function(state)
 end)
 
 
+a:NewToggle("Auto Rebirth", "auto rebirth", function(state)
+    if state then
+	getgenv().autorebirth = true;
+	autorebirtoh()
+    else
+    getgenv().autorebirth = false;
+    end
+end)
 
 
 function doatap()
