@@ -1,9 +1,19 @@
 --Tapping legends script
+
+--auto farm
 getgenv().autotap = false;
 getgenv().autorebirth = false;
+
+--auto upgrade var
 getgenv().autoupgradetapmultiplier = false;
 getgenv().autoupgradeautoclicker = false;
 getgenv().autoupgrademorerebirth = false;
+getgenv().autoupgradepetstorage = false;
+getgenv().autoupgradefasterwalk = false;
+getgenv().autoupgradecriticalchances = false;
+getgenv().autoupgradeautoclickermultiplier = false;
+getgenv().autoupgrademaxcombo = false;
+getgenv().autoupgradeachivmentluck = false;
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
@@ -144,3 +154,101 @@ function MoreRebirth()
 end
 
 MoreRebirth();
+
+
+function MoreStorage()
+	spawn(function()
+		while autoupgradepetstorage == true do 
+			local args = {
+				[1] = "Ruby",
+				[2] = "PetStorage"
+			}
+			
+			game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+			wait()
+		end	
+	end)
+end
+
+MoreStorage();
+
+function FasterWalk()
+	spawn(function()
+		while autoupgradefasterwalk == true do 
+			local args = {
+				[1] = "Ruby",
+				[2] = "RebirthsUpgrade"
+			}
+			
+			game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+			wait()
+		end	
+	end)
+end
+
+FasterWalk();
+
+function CriticalChances()
+	spawn(function()
+		while autoupgradecriticalchances == true do 
+			local args = {
+				[1] = "Ruby",
+				[2] = "CriticalChances"
+			}
+			
+			game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+			wait()
+		end	
+	end)
+end
+
+CriticalChances();
+
+function AUmultiplier()
+	spawn(function()
+		while autoupgradeautoclickermultiplier == true do 			
+			local args = {
+				[1] = "Ruby",
+				[2] = "AutoClickerMultiplier"
+			}
+
+			game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+			wait()
+		end	
+	end)
+end
+
+AUmultiplier();
+
+function MaxCombo()
+	spawn(function()
+		while autoupgrademaxcombo == true do 
+			local args = {
+				[1] = "Ruby",
+				[2] = "MaxCombo"
+			}
+			
+			game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+			wait()
+		end	
+	end)
+end
+
+MaxCombo();
+
+function AchivLuck()
+	spawn(function()
+		while autoupgradeachivmentluck == true do 
+			local args = {
+				[1] = "Ruby",
+				[2] = "AchievementLuck"
+			}
+			
+			game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+			wait()
+		end	
+	end)
+end
+
+AchivLuck();
+
