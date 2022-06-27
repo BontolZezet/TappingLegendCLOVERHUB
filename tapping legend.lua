@@ -341,7 +341,6 @@ function RedeemCodes()
 		while Redeemallcode == true do
 			local args = {
 				[1] = "Wrong Code 1"
-				[2] = "Wrong Code 2"
 			}
 			
 			game:GetService("ReplicatedStorage").Remotes.RedeemCode:InvokeServer(unpack(args))
