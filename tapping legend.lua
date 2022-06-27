@@ -50,7 +50,7 @@ local p = Window:NewTab("Misc")
 local a = w:NewSection("Auto Farm")
 local b = w:NewSection("Auto Upgrade")
 local o = p:NewSection("Fitur Tambahan")
-local k = c:NewSection("Teleport")
+local k = c:NewSection("Teleport Area")
 
 
 
@@ -176,67 +176,67 @@ end)
 
 
 --Teleport
-c:NewButton("SpawnAr", "0 Rebirth Area", function()
+k:NewButton("SpawnAr", "0 Rebirth Area", function()
     getgenv().SpawnArea = true;
 	SpawnAr()
 end)
 
-c:NewButton("Forest", "2,5K Rebirth Area", function()
+k:NewButton("Forest", "2,5K Rebirth Area", function()
     getgenv().ForestArea = true;
 	Forest()
 end)
 
-c:NewButton("Desert", "500K Rebirth Area", function()
+k:NewButton("Desert", "500K Rebirth Area", function()
     getgenv().DesertArea = true;
 	Desert()
 end)
 
-c:NewButton("Winter", " 20M Rebirth Area", function()
+k:NewButton("Winter", " 20M Rebirth Area", function()
     getgenv().WinterArea = true;
 	Winter()
 end)
 
-c:NewButton("Lava", "300M Rebirth Area", function()
+k:NewButton("Lava", "300M Rebirth Area", function()
     getgenv().LavaArea = true;
 	Lava()
 end)
 
-c:NewButton("Aqua", "12B Rebirth Area", function()
+k:NewButton("Aqua", "12B Rebirth Area", function()
     getgenv().AquaArea = true;
 	Aqua()
 end)
 
-c:NewButton("Sakura", "150B Rebirth Area", function()
+k:NewButton("Sakura", "150B Rebirth Area", function()
     getgenv().SakuraArea = true;
 	Sakura()
 end)
 
-c:NewButton("Mines", "1,5T Rebirth Area", function()
+k:NewButton("Mines", "1,5T Rebirth Area", function()
     getgenv().MinesArea = true;
 	Mines()
 end)
 
-c:NewButton("Galaxy", "15T Rebirth Area", function()
+k:NewButton("Galaxy", "15T Rebirth Area", function()
     getgenv().GalaxyArea = true;
 	Galaxy()
 end)
 
-c:NewButton("Heaven", "250T Rebirth Area", function()
+k:NewButton("Heaven", "250T Rebirth Area", function()
     getgenv().HellArea = true;
 	Heaven()
 end)
 
-c:NewButton("Hell", "10Qd Rebirth Area", function()
+k:NewButton("Hell", "10Qd Rebirth Area", function()
     getgenv().HellArea = true;
 	Hell()
 end)
 
-c:NewButton("Tech", "500Qd Rebirth Area", function()
+k:NewButton("Tech", "500Qd Rebirth Area", function()
     getgenv().TechArea = true;
 	Tech()
 end)
 
-c:NewButton("Steampunk", "20Qn Rebirth Area", function()
+k:NewButton("Steampunk", "20Qn Rebirth Area", function()
     getgenv().SteampunkArea = true;
 	Steampunk()
 end)
