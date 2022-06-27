@@ -19,7 +19,7 @@ getgenv().autoupgradeachivmentluck = false;
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local Window = Library.CreateLib("Cloveor Hub", "Ocean")
+local Window = Library.CreateLib("Cloveor Hub", "DarkTheme")
 
 local w = Window:NewTab("Farming")
 
