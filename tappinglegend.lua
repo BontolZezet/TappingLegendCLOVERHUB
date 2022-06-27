@@ -12,13 +12,13 @@ local Window = Library.CreateLib("Cloveor Hub", "Ocean")
 local w = Window:NewTab("Farming")
 
 
-local w = w:NewSection("Auto Upgrade")
-local w = a:NewSection("Auto Farm")
+local b = w:NewSection("Auto Upgrade")
+local a = w:NewSection("Auto Farm")
 
 
 
 
-a:NewToggle("Clicker Multiplier", "Upgrade Click Multiplier", function(state)
+b:NewToggle("Clicker Multiplier", "Upgrade Click Multiplier", function(state)
     if state then
 	getgenv().autoupgradetapmultiplier = true;
 	ClikerMultiplier()
@@ -27,7 +27,7 @@ a:NewToggle("Clicker Multiplier", "Upgrade Click Multiplier", function(state)
     end
 end)
 
-a:NewToggle("More Rebirth", "Upgrade Rebirth value", function(state)
+b:NewToggle("More Rebirth", "Upgrade Rebirth value", function(state)
     if state then
 	getgenv().autoupgrademorerebirth = true;
 	MoreRebirth()
@@ -36,7 +36,7 @@ a:NewToggle("More Rebirth", "Upgrade Rebirth value", function(state)
     end
 end)
 
-a:NewToggle("Auto Clicker", "Upgrade Auto Clicker", function(state)
+b:NewToggle("Auto Clicker", "Upgrade Auto Clicker", function(state)
     if state then
 	getgenv().autoupgradeautoclicker = true;
 	AutoClicker()
@@ -46,7 +46,7 @@ a:NewToggle("Auto Clicker", "Upgrade Auto Clicker", function(state)
 end)
 
 
-w:NewToggle("Auto Tap", "auto clicker", function(state)
+a:NewToggle("Auto Tap", "auto clicker", function(state)
     if state then
 	getgenv().autotap = true;
 	doatap()
