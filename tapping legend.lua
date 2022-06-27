@@ -50,7 +50,7 @@ local p = Window:NewTab("Misc")
 local a = w:NewSection("Auto Farm")
 local b = w:NewSection("Auto Upgrade")
 local o = p:NewSection("Fitur Tambahan")
-local c = c:NewSection("Teleport")
+local k = c:NewSection("Teleport")
 
 
 
