@@ -1,5 +1,7 @@
 --Tapping legends script
 
+
+
 --auto farm
 getgenv().autotap = false;
 getgenv().autorebirth = false;
@@ -55,6 +57,72 @@ b:NewToggle("Auto Clicker", "Upgrade Auto Clicker", function(state)
     end
 end)
 
+b:NewToggle("Pet Storage", "Upgrade Pet Storage", function(state)
+    if state then
+	getgenv().autoupgradepetstorage = true;
+	MoreStorage()
+    else
+    getgenv().autoupgradepetstorage = false;
+    end
+end)
+
+b:NewToggle("Faster Walk", "Upgrade Faster Walk", function(state)
+    if state then
+	getgenv().autoupgradefasterwalk= true;
+	FasterWalk()
+    else
+    getgenv().autoupgradefasterwalk = false;
+    end
+end)
+
+
+b:NewToggle("Critical Chances", "Upgrade Critical Chances", function(state)
+    if state then
+	getgenv().autoupgradecriticalchances = true;
+	CriticalChances()
+    else
+    getgenv().autoupgradecriticalchances = false;
+    end
+end)
+
+
+b:NewToggle("Auto Clicker Multiplier", "Upgrade Auto Clicker Multiplier", function(state)
+    if state then
+	getgenv().autoupgradeautoclickermultiplier = true;
+	AUmultiplier()
+    else
+    getgenv().autoupgradeautoclickermultiplier = false;
+    end
+end)
+
+
+b:NewToggle("Auto Clicker", "Upgrade Auto Clicker", function(state)
+    if state then
+	getgenv().autoupgradeautoclicker = true;
+	AutoClicker()
+    else
+    getgenv().autoupgradeautoclicker = false;
+    end
+end)
+
+
+b:NewToggle("Max Tap Combo", "Upgrade Max combo", function(state)
+    if state then
+	getgenv().autoupgrademaxcombo = true;
+	MaxCombo()
+    else
+    getgenv().autoupgrademaxcombo = false;
+    end
+end)
+
+b:NewToggle("Achivement Luck", "Upgrade achivement luck", function(state)
+    if state then
+	getgenv().autoupgradeachivmentluck = true;
+	AchivLuck()
+    else
+    getgenv().autoupgradeachivmentluck = false;
+    end
+end)
 
 a:NewToggle("Auto Tap", "auto clicker", function(state)
     if state then
