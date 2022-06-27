@@ -43,14 +43,14 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("Cloveor Hub", "DarkTheme")
 
 local w = Window:NewTab("Farming")
-local c = Window:NewTab("Teleport")
+local Tab2 = Window:NewTab("Teleport")
 local p = Window:NewTab("Misc")
 
 
 local a = w:NewSection("Auto Farm")
 local b = w:NewSection("Auto Upgrade")
 local o = p:NewSection("Fitur Tambahan")
-local k = c:NewSection("Teleport Area")
+local k = Tab2:NewSection("Teleport Area")
 
 
 
@@ -475,7 +475,7 @@ function Desert()
 	end)
 end
 
-Forest();
+Desert();
 
 function Winter()
 	spawn(function()
@@ -531,7 +531,7 @@ function Sakura()
 	end)
 end
 
-Aqua();
+Sakura();
 
 function Mines()
 	spawn(function()
@@ -559,7 +559,7 @@ function Galaxy()
 	end)
 end
 
-Mines();
+Galaxy();
 
 function Heaven()
 	spawn(function()
