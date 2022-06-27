@@ -340,7 +340,7 @@ function RedeemCodes()
 	spawn(function()
 		while Redeemallcode == true do
 			local args = {
-				[1] = "Wrong Code 1"
+				[1] = ""
 			}
 			
 			game:GetService("ReplicatedStorage").Remotes.RedeemCode:InvokeServer(unpack(args))
