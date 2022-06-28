@@ -18,11 +18,11 @@ getgenv().autoupgrademaxcombo = false;
 getgenv().autoupgradeachivmentluck = false;
 
 --Fitur tambahan aja sih hehe
-getgenv().Redeemallcode = false;
-getgenv().AutoUseVialTap = false;
-getgenv().AutoUseVialLuck = false;
-getgenv().AutoUseVialDamage = false;
-getgenv().AutoUseVialRebirth = false;
+getgenv().Redeemallcode = true;
+getgenv().AutoUseVialTap = true;
+getgenv().AutoUseVialLuck = true;
+getgenv().AutoUseVialDamage = true;
+getgenv().AutoUseVialRebirth = true;
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
