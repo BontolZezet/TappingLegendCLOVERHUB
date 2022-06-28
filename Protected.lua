@@ -167,8 +167,14 @@ end)
 
 o:NewToggle("Use all Vial Tap", "Using All vial tap you have", function(state)
     if state then
-	getgenv().AutoUseVialTap = true;
-	VialTap()
+		while AutoUseVialTap == true do
+			local args = {
+				[1] = "VialTaps"
+			}
+			
+			game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
+			wait()
+		end
     else
     getgenv().AutoUseVialTap = false;
     end
@@ -176,8 +182,14 @@ end)
 
 o:NewToggle("Use all Vial Luck", "Using All vial Luck you have", function(state)
     if state then
-	getgenv().AutoUseVialLuck = true;
-	VialLuck()
+		while AutoUseVialLuck == true do
+			local args = {
+				[1] = "VialLuck"
+			}
+			
+			game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
+			wait()
+		end
     else
     getgenv().AutoUseVialLuck = false;
     end
@@ -185,8 +197,14 @@ end)
 
 o:NewToggle("Use all Vial Damage", "Using All vial Damage you have", function(state)
     if state then
-	getgenv().VialDamage = true;
-	VialDamage()
+		while AutoUseVialDamage == true do
+			local args = {
+				[1] = "VialDamage"
+			}
+			
+			game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
+			wait()
+		end
     else
     getgenv().VialDamage = false;
     end
@@ -194,8 +212,14 @@ end)
 
 o:NewToggle("Use all Vial Rebirth", "Using All vial Rebirth you have", function(state)
     if state then
-	getgenv().AutoUseVialRebirth = true;
-	VialRebirth()
+		while AutoUseVialRebirth == true do
+			local args = {
+				[1] = "VialRebirths"
+			}
+			
+			game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
+			wait()
+		end
     else
     getgenv().AutoUseVialRebirth = false;
     end
@@ -526,18 +550,3 @@ function VialDamage()
 	end)
 end
 
-VialDamage()
-
-function VialRebirth()
-	spawn(function()
-		while AutoUseVialRebirth == true do
-			local args = {
-				[1] = "VialRebirths"
-			}
-			
-			game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
-		end
-	end)
-end
-
-VialRebirth();
