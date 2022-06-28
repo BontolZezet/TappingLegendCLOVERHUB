@@ -17,12 +17,9 @@ getgenv().autoupgradeautoclickermultiplier = false;
 getgenv().autoupgrademaxcombo = false;
 getgenv().autoupgradeachivmentluck = false;
 
---Fitur tambahan aja sih hehe
-getgenv().Redeemallcode = false;
-getgenv().AutoUseVialTap = true;
-getgenv().AutoUseVialLuck = true;
-getgenv().AutoUseVialDamage = true;
-getgenv().AutoUseVialRebirth = true;
+--Auto open egg
+getgenv().BasicEgg = false;
+
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
@@ -36,9 +33,8 @@ local p = Window:NewTab("Misc")
 
 local a = w:NewSection("Auto Farm")
 local b = w:NewSection("Auto Upgrade")
-local o = p:NewSection("Use 1")
+local o = p:NewSection("Use Vial")
 local fi = p:NewButton("Claim")
-local ce = p:NewSection("Use All")
 local k = Tab2:NewSection("Teleport Area")
 
 
@@ -196,42 +192,6 @@ o:NewButton("Use Vial Rebirth", "Using your vial", function()
 end)
 
 
---Equip All
-ce:NewButton("Use All Vial Tap", "Using all your vial", function()
-	local args = {
-		[1] = "VialTaps"
-	}
-	
-	game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
-	wait()
-end)
-
-ce:NewButton("Use All Vial Luck", "Using all your vial", function()
-	local args = {
-		[1] = "VialLuck"
-	}
-	
-	game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
-	wait()
-end)
-
-ce:NewButton("Use All Vial Damage", "Using all your vial", function()
-	local args = {
-		[1] = "VialDamage"
-	}
-	
-	game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
-	wait()
-end)
-
-ce:NewButton("Use All Vial Rebirth", "Using all your vial", function()
-	local args = {
-		[1] = "VialRebirths"
-	}
-	
-	game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
-	wait()
-end)
 
 --Teleport
 k:NewButton("Spawn", "0 Rebirth Area", function()
