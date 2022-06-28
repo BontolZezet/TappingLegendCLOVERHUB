@@ -176,7 +176,7 @@ end)
 
 
 --Teleport
-k:NewButton("SpawnAr", "0 Rebirth Area", function()
+k:NewButton("Spawn", "0 Rebirth Area", function()
     getgenv().SpawnArea = true;
 	SpawnAr()
 end)
