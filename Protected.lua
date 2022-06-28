@@ -18,7 +18,7 @@ getgenv().autoupgrademaxcombo = false;
 getgenv().autoupgradeachivmentluck = false;
 
 --Fitur tambahan aja sih hehe
-getgenv().Redeemallcode = true;
+getgenv().Redeemallcode = false;
 getgenv().AutoUseVialTap = true;
 getgenv().AutoUseVialLuck = true;
 getgenv().AutoUseVialDamage = true;
