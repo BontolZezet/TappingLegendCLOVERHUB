@@ -22,19 +22,19 @@ getgenv().Redeemallcode = false;
 
 
 --Teleport area
-getgenv().SpawnArea = false;
-getgenv().ForestArea = false;
-getgenv().DesertArea = false;
-getgenv().WinterArea = false;
-getgenv().LavaArea = false;
-getgenv().AquaArea = false;
-getgenv().SakuraArea = false;
-getgenv().MinesArea = false;
-getgenv().GalaxyArea = false;
-getgenv().HeavenArea = false;
-getgenv().HellArea = false;
-getgenv().TechArea = false;
-getgenv().SteampunkArea = false;
+getgenv().SpawnArea = true;
+getgenv().ForestArea = true;
+getgenv().DesertArea = true;
+getgenv().WinterArea = true;
+getgenv().LavaArea = true;
+getgenv().AquaArea = true;
+getgenv().SakuraArea = true;
+getgenv().MinesArea = true;
+getgenv().GalaxyArea = true;
+getgenv().HeavenArea = true;
+getgenv().HellArea = true;
+getgenv().TechArea = true;
+getgenv().SteampunkArea = true;
 
 
 
@@ -169,7 +169,7 @@ a:NewToggle("Auto Rebirth", "auto rebirth", function(state)
 end)
 
 --MIsc
-p:NewButton("Redeem All Code", "Redeem a code", function()
+o:NewButton("Redeem All Code", "Redeem a code", function()
     getgenv().Redeemallcode = true;
 	RedeemCodes()
 end)
@@ -177,67 +177,54 @@ end)
 
 --Teleport
 k:NewButton("Spawn", "0 Rebirth Area", function()
-    getgenv().SpawnArea = true;
 	SpawnAr()
 end)
 
 k:NewButton("Forest", "2,5K Rebirth Area", function()
-    getgenv().ForestArea = true;
 	Forest()
 end)
 
 k:NewButton("Desert", "500K Rebirth Area", function()
-    getgenv().DesertArea = true;
 	Desert()
 end)
 
-k:NewButton("Winter", " 20M Rebirth Area", function()
-    getgenv().WinterArea = true;
+k:NewButton("Winter", "20M Rebirth Area", function()
 	Winter()
 end)
 
 k:NewButton("Lava", "300M Rebirth Area", function()
-    getgenv().LavaArea = true;
 	Lava()
 end)
 
 k:NewButton("Aqua", "12B Rebirth Area", function()
-    getgenv().AquaArea = true;
 	Aqua()
 end)
 
 k:NewButton("Sakura", "150B Rebirth Area", function()
-    getgenv().SakuraArea = true;
 	Sakura()
 end)
 
 k:NewButton("Mines", "1,5T Rebirth Area", function()
-    getgenv().MinesArea = true;
 	Mines()
 end)
 
 k:NewButton("Galaxy", "15T Rebirth Area", function()
-    getgenv().GalaxyArea = true;
 	Galaxy()
 end)
 
 k:NewButton("Heaven", "250T Rebirth Area", function()
-    getgenv().HellArea = true;
 	Heaven()
 end)
 
 k:NewButton("Hell", "10Qd Rebirth Area", function()
-    getgenv().HellArea = true;
 	Hell()
 end)
 
 k:NewButton("Tech", "500Qd Rebirth Area", function()
-    getgenv().TechArea = true;
 	Tech()
 end)
 
 k:NewButton("Steampunk", "20Qn Rebirth Area", function()
-    getgenv().SteampunkArea = true;
 	Steampunk()
 end)
 
