@@ -36,7 +36,9 @@ local p = Window:NewTab("Misc")
 
 local a = w:NewSection("Auto Farm")
 local b = w:NewSection("Auto Upgrade")
-local o = p:NewSection("Fitur Tambahan")
+local o = p:NewSection("Use 1")
+local fi = p:NewButton("Claim")
+local ce = p:NewSection("Use All")
 local k = Tab2:NewSection("Teleport Area")
 
 
@@ -165,66 +167,71 @@ o:NewButton("Auto Equip Pet", "Equip best pet", function()
 	game:GetService("ReplicatedStorage").Remotes.EquipBest:InvokeServer()
 end)
 
-o:NewToggle("Use all Vial Tap", "Using All vial tap you have", function(state)
-    if state then
-		while AutoUseVialTap == true do
-			local args = {
-				[1] = "VialTaps"
-			}
-			
-			game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
-			wait()
-		end
-    else
-    getgenv().AutoUseVialTap = false;
-    end
+o:NewButton("Use Vial Tap", "Using your vial", function()
+	local args = {
+		[1] = "VialTaps"
+	}
+	game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
 end)
 
-o:NewToggle("Use all Vial Luck", "Using All vial Luck you have", function(state)
-    if state then
-		while AutoUseVialLuck == true do
-			local args = {
-				[1] = "VialLuck"
-			}
-			
-			game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
-			wait()
-		end
-    else
-    getgenv().AutoUseVialLuck = false;
-    end
+o:NewButton("Use Vial Luck", "Using your vial", function()
+	local args = {
+		[1] = "VialLuck"
+	}
+	game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
 end)
 
-o:NewToggle("Use all Vial Damage", "Using All vial Damage you have", function(state)
-    if state then
-		while AutoUseVialDamage == true do
-			local args = {
-				[1] = "VialDamage"
-			}
-			
-			game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
-			wait()
-		end
-    else
-    getgenv().VialDamage = false;
-    end
+o:NewButton("Use Vial Damage", "Using your vial", function()
+	local args = {
+		[1] = "VialDamage"
+	}
+	game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
 end)
 
-o:NewToggle("Use all Vial Rebirth", "Using All vial Rebirth you have", function(state)
-    if state then
-		while AutoUseVialRebirth == true do
-			local args = {
-				[1] = "VialRebirths"
-			}
-			
-			game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
-			wait()
-		end
-    else
-    getgenv().AutoUseVialRebirth = false;
-    end
+o:NewButton("Use Vial Rebirth", "Using your vial", function()
+	local args = {
+		[1] = "VialRebirths"
+	}
+	game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
 end)
 
+
+--Equip All
+ce:NewButton("Use All Vial Tap", "Using all your vial", function()
+	local args = {
+		[1] = "VialTaps"
+	}
+	
+	game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
+	wait()
+end)
+
+ce:NewButton("Use All Vial Luck", "Using all your vial", function()
+	local args = {
+		[1] = "VialLuck"
+	}
+	
+	game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
+	wait()
+end)
+
+ce:NewButton("Use All Vial Damage", "Using all your vial", function()
+	local args = {
+		[1] = "VialDamage"
+	}
+	
+	game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
+	wait()
+end)
+
+ce:NewButton("Use All Vial Rebirth", "Using all your vial", function()
+	local args = {
+		[1] = "VialRebirths"
+	}
+	
+	game:GetService("ReplicatedStorage").Remotes.UseVial:FireServer(unpack(args))
+	wait()
+end)
 
 --Teleport
 k:NewButton("Spawn", "0 Rebirth Area", function()
